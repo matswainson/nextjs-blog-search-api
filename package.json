@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cache-posts": "node scripts/cache.js"
   },
   "dependencies": {
     "date-fns": "^2.11.1",
@@ -15,5 +16,13 @@
     "react-dom": "16.13.1",
     "remark": "^12.0.0",
     "remark-html": "^11.0.1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn cache-posts && git add cache/data.js"
+    }
   }
 }

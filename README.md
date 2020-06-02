@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Next.js Blog & Search API
+
+An example of using API Routes to create a search component in Next.js.

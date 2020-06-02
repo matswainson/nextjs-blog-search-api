@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+
+.search {
+  border: 1px solid #666;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 18px;
+  width: 100%;
+}
+
+.results {
+  list-style: none;
+  overflow: hidden;
+  margin: 9px 0 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.result {
+  background: #0070f3;
+  color: #eee;
+  margin: 0 0 9px;
+  padding: 18px;
+}
+
+.result a {
+  color: #eee;
+}
